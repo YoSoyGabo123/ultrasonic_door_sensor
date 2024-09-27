@@ -87,7 +87,7 @@ def main():
                     is_in_detection_window = False
 
             # Check if it's time to log the detections
-            if current_time - start_time >= 1800:  # 30 minutes
+            if current_time - start_time >= 60:  # 60 seconds
                 # Log the number of people detected in the interval
                 if people_count > 0:
                     elapsed_milliseconds = int((current_time - start_time) * 1000)
